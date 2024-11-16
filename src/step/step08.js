@@ -15,15 +15,15 @@ const Step08 = () => {
 
   const expensiveCalculation = (num) => {
     console.log("복잡한 계산 실행 중...");
-    for (let i = 0; i < 100000000; i++) {
+    for (let i = 0; i < 1000000000; i++) {
       num += 1; 
     }
     return num;
   };
 
 
-//   const calculation = useMemo(() => expensiveCalculation(count), [count]);
-const calculation = expensiveCalculation(count);
+  const calculation = useMemo(() => expensiveCalculation(count), [count]);
+// const calculation = expensiveCalculation(count);
   return (
     <div>
      
