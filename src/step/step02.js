@@ -8,7 +8,7 @@ const Step02 = () => {
     const animationRef = useRef(null);
   return (
     <>
-        <div className='box'></div>
+        <div ref={animationRef} className='box'></div>
         <button onClick={()=>{
             animationRef.current.classList.add('animate');
         }}>CLICK</button>
